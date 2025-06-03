@@ -47,9 +47,8 @@ ul li {
 
 
 ul li::before {
-  content: "🌸";
-  position: absolute;
-  left: 0;
+  content: "🌸 ";
+  margin-right: 0.5em;
 }
 
 table {
