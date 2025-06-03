@@ -40,10 +40,11 @@ ul {
 }
 
 ul li {
-  margin-bottom: 0.5rem;
-  padding-left: 1rem;
+  margin: 0.75rem 0; /* 上下にマージンを追加 */
+  padding-left: 1.5rem;
   position: relative;
 }
+
 
 ul li::before {
   content: "🌸";
