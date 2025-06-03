@@ -1,4 +1,7 @@
-
+// ページを開いたときのウェルカムメッセージ
+window.addEventListener('load', () => {
+  alert("ようこそ、sakuraのポートフォリオへ！");
+});
 // マウスに合わせて表示
 document.addEventListener('mousemove', (e) => {
   const petal = document.createElement('div');
