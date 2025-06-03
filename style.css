@@ -2,76 +2,110 @@
         全体
 -------------------- */
 
-:root {
-  --theme-color: #00a0a0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  width: 100%;
-  height: 100%;
-}
-
 body {
-  margin: 0;
-  padding: 30px;
+  font-family: "Segoe UI", sans-serif;
+  background: #fefefe;
   color: #333;
+  margin: 0;
+  padding: 2rem;
+  line-height: 1.8;
 }
 
-/* --------------------
-        見出し
--------------------- */
-
-h1, h2, h3 {
-  color: var(--theme-color);
-  border-bottom: dashed 0.1em var(--theme-color);
+h1 {
+  font-size: 3rem;
+  color: #ff69b4;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-/* --------------------
-        リンク
--------------------- */
-
-a {
-  color: var(--theme-color);
-  text-decoration: none;
+h2, h3 {
+  color: #ff1493;
+  margin-top: 2rem;
+  border-left: 5px solid #ff69b4;
+  padding-left: 10px;
 }
 
-/* --------------------
-        リスト
--------------------- */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
 ul {
   list-style: none;
-}
-li:before {
-  content: "★";
-  color: var(--theme-color);
+  padding: 0;
 }
 
-/* --------------------
-          表
--------------------- */
+ul li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+ul li::before {
+  content: "🌸";
+  position: absolute;
+  left: 0;
+}
 
 table {
-  border-spacing: 0;
+  width: 100%;
   border-collapse: collapse;
-  border: solid 1px #f0f0f0;
-  min-width: 70%;
+  margin-top: 1rem;
 }
-tr {
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 1rem;
+}
+
+table th {
+  background-color: #ffe0f0;
+  color: #c71585;
+  text-align: left;
+  width: 20%;
+}
+
+table td {
   background-color: #fff;
 }
-tr:nth-child(2n) {
-  background-color: #f9f9f9;
+
+a {
+  color: #c71585;
+  text-decoration: none;
 }
-th {
-  background: var(--theme-color);
-  color: #fff;
+
+a:hover {
+  text-decoration: underline;
 }
-th, td {
-  border: solid 1px #f0f0f0;
-  padding: 0.5rem;
+
+iframe {
+  display: block;
+  margin: 1rem auto;
+  border-radius: 10px;
+  border: 3px solid #ffc0cb;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
+p {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
